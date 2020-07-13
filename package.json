@@ -1,0 +1,24 @@
+{
+  "name": "sauce-demo-js-ui-test",
+  "version": "1.0.0",
+  "description": "This project is an exercise to practice the skills learned in the Javascript Study Group. With this project we will test the main aspects of the sauce demo web site, available in:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoCabrales29/sauce-demo-JS-UI-test.git"
+  },
+  "author": "scabrales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiagoCabrales29/sauce-demo-JS-UI-test/issues"
+  },
+  "homepage": "https://github.com/SantiagoCabrales29/sauce-demo-JS-UI-test#readme",
+  "dependencies": {
+    "@wdio/cli": "^6.1.25",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
