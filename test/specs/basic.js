@@ -19,7 +19,7 @@ describe('Log in Tests', () => {
         var inventoryTitle = $("#inventory_filter_container > div").getText();
         expect(inventoryTitle).to.equals("Products");
     })
-    it.only('Unsuccessful Login', () => {
+    it('Unsuccessful Login', () => {
         browser.url("");
         //expect(browser).toHaveTitle('Swag Labs');
         var username = $("#user-name");
