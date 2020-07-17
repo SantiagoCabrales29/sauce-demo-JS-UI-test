@@ -36,7 +36,7 @@ describe('Test cases for the Cart functionality', () => {
         label.should.be.equals('Products');
     })
 
-    it.only('Test Continue button', () => {
+    it('Test Continue button', () => {
         browser.url("cart");
         var keepShoppingButton = $('.btn_action');
         keepShoppingButton.click();
