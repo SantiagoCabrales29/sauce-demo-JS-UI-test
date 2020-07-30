@@ -7,16 +7,13 @@ describe('Inventory Tests', () => {
         browser.url("inventory");
         var inventoryItem = $$('.inventory_item');
         var numberItems = inventoryItem.length;
-        console.log("HALLO MEIN FREUND, MEIN NAME IST SANTIAGO " + numberItems);
-        var indexOfItems = Math.floor(Math.random() * 6);
+        var indexOfItems = Math.floor(Math.random() * numberItems);
         console.log("El numero random fue: " + indexOfItems);
 
         var item = $$('.inventory_item')[indexOfItems];
         var nameOfItem = item.$('.inventory_item_name').getText();
-        console.log("The name of the random item that was selected is:::::::::::::::::::::                    " + nameOfItem);
         
         var addToCartButton = item.$('.btn_primary');
-        console.log("HELLO HELLO BABY " + addToCartButton.getText());
         addToCartButton.click();
 
         //.header_container > div > a > span
@@ -29,13 +26,12 @@ describe('Inventory Tests', () => {
         browser.url("inventory");
         var inventoryItem = $$('.inventory_item');
         var numberItems = inventoryItem.length;
-        console.log("HALLO MEIN FREUND, MEIN NAME IST SANTIAGO " + numberItems);
+    
         var indexOfItems = Math.floor(Math.random() * 6);
-        console.log("El numero random fue: " + indexOfItems);
+    
 
         var item = $$('.inventory_item')[indexOfItems];
         var nameOfItem = item.$('.inventory_item_name').getText();
-        console.log("The name of the random item that was selected is:::::::::::::::::::::                    " + nameOfItem);
         
         var addToCartButton = item.$('.btn_primary');
         console.log("HELLO HELLO BABY " + addToCartButton.getText());
